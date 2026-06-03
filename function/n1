@@ -1,0 +1,124 @@
+function : A function is a block of code that performs a specific task. It can take input in the form of parameters and can return a value. Functions help in breaking down complex problems into smaller, manageable pieces, promoting code reusability and modular programming.
+
+why we use: Functions are used to:
+1. Improve code readability and maintainability.
+2. Avoid code duplication by reusing code.
+modularize code into smaller, manageable pieces.
+4. Facilitate debugging and testing by isolating specific functionality.
+
+paramatrized function: A parameterized function is a function that takes one or more parameters as input. These parameters allow the function to perform operations based on the values passed to it when the function is called. 
+
+component of function:  1. Function name: The identifier used to call the function.
+                        2. Parameters: The input values that the function can accept (optional).
+                        3. Return type: The data type of the value that the function returns (optional).    
+
+sequential flow of function:    1. Function definition: The function is defined with its name, parameters, and body.
+2. Function call: The function is invoked or called from another part of the code, passing any required arguments.
+3. Execution: The code within the function is executed, performing the specified task.
+
+context of the function:      
+
+ltd: 
+
+stackframe:
+
+ 
+ 
+types of function:
+1. Built-in functions: These are pre-defined functions provided by the programming language or libraries. Examples include `print()`, `len()`, and `sqrt()`.
+2. User-defined functions: These are functions created by the programmer to perform specific tasks. They can be parameterized or non-parameterized, and they can be recursive or non-recursive. 
+
+
+non paramatrized function:   A non-parameterized function is a function that does not take any parameters as input. It performs a specific task without requiring any external data to be passed to it
+
+ recursive: a recursive function is a fuction which calls itself in its body agin and again until a base condition is met
+
+
+diff b/w arguement and parameter:   
+1. Parameter: A parameter is a variable that is defined in the function declaration or definition. It acts as a placeholder for the value that will be passed to the function when it is called. Parameters are used to receive input values and perform operations based on those values.
+2. Argument: An argument is the actual value that is passed to a function when it is called. It is the data that is provided to the function's parameters to be processed. Arguments can be constants, variables, or expressions.   
+
+recursive function: 
+
+global scope , functional scope, block scope:    global scope eg: 
+x = 10  # This variable is in the global scope  
+def my_function():
+    print(x)  # This variable is accessible within the function         
+functional scope eg:
+def my_function():  
+    y = 5  # This variable is in the functional scope
+    print(y)  # This variable is accessible within the function
+block scope eg:
+if(true)
+    z = 20  # This variable is in the block scope   
+
+
+pass by value , pass by reference:  pass by value: In pass by value, a copy of the actual parameter's value is passed to the function. Changes made to the parameter within the function do not affect the original variable outside the function. eg:
+def modify_value(x):
+    x = x + 5  # Modifying the parameter value
+    return x        
+    
+original_value = 10
+modified_value = modify_value(original_value)  # Pass by value   
+
+print("Original value:", original_value)  # Output: Original value: 10
+print("Modified value:", modified_value)  # Output: Modified value: 15      
+
+pass by reference: In pass by reference, a reference to the actual parameter is passed to the function. Changes made to the parameter within the function affect the original variable outside the function. eg:
+java example:
+public class PassByReferenceExample {
+    public static void modifyValue(int[] arr) {
+        arr[0] = arr[0] + 5;  // Modifying the parameter value
+    }
+
+    public static void main(String[] args) {
+        int[] originalArray = {10};  // This array is in the global scope
+        modifyValue(originalArray);  // Pass by reference
+
+        System.out.println("Original value: " + originalArray[0]);  // Output: Original value: 15
+    }
+}       
+
+
+
+
+
+
+
+
+Memory: types of memory:  
+1. Stack memory: This is a region of memory that stores local variables and function call information. It operates in a last-in, first-out (LIFO) manner, meaning that the most recently added item is the first one to be removed. Stack memory is typically used for function calls and local variable storage.
+2. Heap memory: This is a region of memory that is used for dynamic memory allocation. It allows for the creation of objects and data structures at runtime. Heap memory is managed by the programmer, and it can grow or shrink as needed. 
+
+
+
+
+function overloading: same name but return type or parameter should different 
+function overrinding: same name and same parameter but different return type:
+    
+    class A{
+        int addEventListener(int a,int b){
+            retrurn a+b;
+        }
+    }
+    class B extends A{
+        @Override
+        int add(int a, int b){
+            return a*b ;
+        }
+    }
+
+write a program 
+
+a fun to count digit of the number (return type int)
+calculate  ncr and npr using factorial method(optimised will be discus)
+
+write a function whic  return the sum of all the even  number b/w two number a and b
+
+write a function to count digits in a number: 
+
+write a function ti demonstrate the string cocatation .like a personalized greetung , name passed in arguement a 
+
+given the integer as parameter replace all the zero in the digit with 5 
+
+calculate  ncr and npr using factorial metho

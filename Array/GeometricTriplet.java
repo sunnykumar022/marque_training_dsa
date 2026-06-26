@@ -9,9 +9,9 @@ class GeometricTriplet {
                 int k=j+1;
                 while (k<n) {
                  if(arr[j]*arr[j]==arr[i]*arr[k]){
-                    System.err.print(arr[i]+" "+arr[j]+" "+arr[k]);
+                    System.out.println(arr[i]+" "+arr[j]+" "+arr[k]);
                 }
-                System.out.println();
+                // System.out.println();
                 k++;
             }
                 
@@ -23,7 +23,7 @@ class GeometricTriplet {
 
     public static void main(String []args){
         // int arr[]={1,2,2,4};
-        int arr[] = {1, 2, 4, 8, 16};
+        int arr[] = {1, 2, 6,10,18,54};
         geometricTriplet(arr);
 
     }

@@ -1,4 +1,5 @@
 public class CountWord {
+    //Count Alphabets in String
     public static void main(String []args){
         String str="Cat dog Meow";
         int count=0;
